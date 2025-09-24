@@ -3,12 +3,19 @@ package ru.netology.nmedia.activiti
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
-import ru.netology.nmedia.viewModel.PostViewModel
 import ru.netology.nmedia.R
+import ru.netology.nmedia.adapter.OnInteractionListener
+import ru.netology.nmedia.adapter.PostsAdapter
 import ru.netology.nmedia.databinding.ActivityMainBinding
-import ru.netology.nmedia.repository.formatNumber
+import ru.netology.nmedia.dto.Post
+import ru.netology.nmedia.viewmodel.PostViewModel
+
 
 class MainActivity : AppCompatActivity() {
+
+    private val viewModel: PostViewModel by viewModels()
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         //enableEdgeToEdge()
@@ -21,24 +28,20 @@ class MainActivity : AppCompatActivity() {
         //}
 
         val viewModel: PostViewModel by viewModels()
-        viewModel.data.observe(this) { post ->
-            with(binding) {
-                author.text = post.author
-                published.text = post.published
-                content.text = post.content
-                likes.text = formatNumber(post.likes)
-                reposts.text = formatNumber(post.reposts)
-                favorite.setImageResource(
-                    if (post.likeByMe) R.drawable.baseline_favorite_24 else R.drawable.outline_favorite_border_24
-                )
-            }
-        }
-        binding.favorite.setOnClickListener {
-            viewModel.like()
-        }
+        val adapter = PostsAdapter(object : OnInteractionListener {
 
-        binding.arrow.setOnClickListener {
-            viewModel.repost()
+            override fun onLike(post: Post) {
+                viewModel.like(post.id)
+            }
+
+            override fun onRepost(post: Post) {
+                viewModel.repost(post.id)
+            }
+        })
+        binding.list.adapter = adapter
+        viewModel.data.observe(this) { posts ->
+            adapter.submitList(posts)
+
         }
     }
 }
