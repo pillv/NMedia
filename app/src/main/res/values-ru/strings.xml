@@ -8,4 +8,12 @@
     <string name="description_post_repost">Репосты поста</string>
     <string name="description_post_view">Просмотры поста</string>
     <string name="description_post_favorite">Пост понравился</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="post_content_hint">Контекнт поста</string>
+    <string name="post_content_is_empty">Пост пустой!</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="edit_text_avatar">Иконка редактирования</string>
+    <string name="description_edit_message">Радактирование</string>
+    <string name="edit_text_post">Текст редактируемового поста</string>
+    <string name="save_post_bottum">Кнопка сохранения</string>
 </resources>

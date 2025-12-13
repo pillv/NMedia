@@ -2,6 +2,7 @@ package ru.netology.nmedia.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.ListAdapter
 import androidx.recyclerview.widget.RecyclerView
@@ -15,6 +16,8 @@ import ru.netology.nmedia.repository.formatNumber
 
 interface OnInteractionListener {
     fun onLike(post: Post) {}
+    fun onEdit(post: Post) {}
+    fun onRemove(post: Post) {}
     fun onRepost(post: Post) {}
 }
 
@@ -32,43 +35,3 @@ class PostsAdapter(
     }
 }
 
-class PostViewHolder(
-    private val binding: CardPostBinding,
-    private val onInteractionListener: OnInteractionListener,
-) : RecyclerView.ViewHolder(binding.root) {
-
-    fun bind(post: Post) {
-        binding.apply {
-            author.text = post.author
-            published.text = post.published
-            content.text = post.content
-            likes.text = formatNumber(post.likes)
-            reposts.text = formatNumber(post.reposts)
-            favorite.setImageResource(
-                if (post.likeByMe) R.drawable.baseline_favorite_24 else R.drawable.outline_favorite_border_24
-            )
-
-
-
-            favorite.setOnClickListener {
-                onInteractionListener.onLike(post)
-            }
-
-            arrow.setOnClickListener {
-                onInteractionListener.onRepost(post)
-            }
-        }
-    }
-}
-
-object PostDiffCallback : DiffUtil.ItemCallback<Post>() {
-
-    override fun areItemsTheSame(oldItem: Post, newItem: Post): Boolean {
-        return oldItem.id == newItem.id
-    }
-
-    override fun areContentsTheSame(oldItem: Post, newItem: Post): Boolean {
-        return oldItem == newItem
-    }
-
-}

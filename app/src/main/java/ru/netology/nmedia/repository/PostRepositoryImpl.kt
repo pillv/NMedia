@@ -127,9 +127,11 @@ class PostRepositoryInMemoryImpl : PostRepository {
         )
     ).reversed()
 
+    private var nextId = posts.first().id + 1
     private val data = MutableLiveData(posts)
 
     override fun get(): LiveData<List<Post>> = data
+
 
     override fun like(id: Long) {
         posts = posts.map {
@@ -143,5 +145,34 @@ class PostRepositoryInMemoryImpl : PostRepository {
             if (it.id != id) it else it.copy(repostByMe = !it.repostByMe, reposts = it.reposts + 1)
         }
         data.value = posts
+    }
+
+    override fun remove(id: Long) {
+        posts = posts.filter {it.id != id}
+        data.value = posts
+    }
+
+    override fun save(post: Post) {
+        if (post.id == 0L) {
+            data.value = listOf(
+                post.copy(
+                    id = nextId++,
+                    author = "Me",
+                    published = "Now"
+                )
+            ) + data.value.orEmpty()
+        } else {
+            data.value = data.value?.map {
+                if (it.id == post.id){
+                    post
+                } else {
+                    it
+                }
+            }
+        }
+    }
+
+    override fun cancelEdit(post: Post) {
+
     }
 }

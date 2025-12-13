@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="colorbackground">#F4F4F4</color>
+    <color name="ic_launcher_background">#FFFFFF</color>
+    <color name="white">#FFFFFFFF</color>
+    <dimen name="common_spacing">16dp</dimen>
+    <dimen name="posts_avatar_size">48dp</dimen>
+    <string name="app_name">NMedia</string>
+    <string name="description_edit_message">Edit message</string>
+    <string name="description_post_author_avatar">Post author avatar</string>
+    <string name="description_post_favorite">Post favorite</string>
+    <string name="description_post_like">Post likes</string>
+    <string name="description_post_menu">Post menu</string>
+    <string name="description_post_repost">Post repost</string>
+    <string name="description_post_view">Post view</string>
+    <string name="edit_text_avatar">Edit text avatar</string>
+    <string name="edit_text_post">edit_text_post</string>
+    <string name="menu_edit">Edit</string>
+    <string name="menu_remove">Remove</string>
+    <string name="nmedia">NMedia!</string>
+    <string name="post_content_hint">Post_content</string>
+    <string name="post_content_is_empty">Post content is empty!</string>
+    <string name="save_post_bottum">Save post bottum</string>
+    <style name="Base.Theme.NMedia" parent="Theme.Material3.DayNight.NoActionBar">
+        
+        
+    </style>
+    <style name="Theme.NMedia" parent="Base.Theme.NMedia"/>
+</resources>

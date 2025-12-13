@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "ru.netology.nmedia.app-mergeDebugResources-3:/layout/card_post.xml",
+        "source": "ru.netology.nmedia.app-main-6:/layout/card_post.xml"
+    },
+    {
+        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_main.xml"
+    },
+    {
+        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/card_post.xml",
+        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/card_post.xml"
+    }
+]

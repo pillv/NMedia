@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">НМедиа</string>
+    <string name="description_edit_message">Радактирование</string>
+    <string name="description_post_author_avatar">Аватар автора поста</string>
+    <string name="description_post_favorite">Пост понравился</string>
+    <string name="description_post_like">Лайки поста</string>
+    <string name="description_post_menu">Опубликовать меню</string>
+    <string name="description_post_repost">Репосты поста</string>
+    <string name="description_post_view">Просмотры поста</string>
+    <string name="edit_text_avatar">Иконка редактирования</string>
+    <string name="edit_text_post">Текст редактируемового поста</string>
+    <string name="menu_edit">Редактировать</string>
+    <string name="menu_remove">Удалить</string>
+    <string name="nmedia">НМедиа!</string>
+    <string name="post_content_hint">Контекнт поста</string>
+    <string name="post_content_is_empty">Пост пустой!</string>
+    <string name="save_post_bottum">Кнопка сохранения</string>
+</resources>

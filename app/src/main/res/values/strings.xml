@@ -7,4 +7,12 @@
     <string name="description_post_repost">Post repost</string>
     <string name="description_post_view">Post view</string>
     <string name="description_post_favorite">Post favorite</string>
+    <string name="menu_remove">Remove</string>
+    <string name="post_content_hint">Post_content</string>
+    <string name="post_content_is_empty">Post content is empty!</string>
+    <string name="menu_edit">Edit</string>
+    <string name="edit_text_avatar">Edit text avatar</string>
+    <string name="description_edit_message">Edit message</string>
+    <string name="edit_text_post">edit_text_post</string>
+    <string name="save_post_bottum">Save post bottum</string>
 </resources>
