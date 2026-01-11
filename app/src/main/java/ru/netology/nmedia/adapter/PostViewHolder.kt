@@ -17,11 +17,10 @@ class PostViewHolder(
             author.text = post.author
             published.text = post.published
             content.text = post.content
-            likes.text = formatNumber(post.likes)
-            reposts.text = formatNumber(post.reposts)
-            favorite.setImageResource(
-                if (post.likeByMe) R.drawable.baseline_favorite_24 else R.drawable.outline_favorite_border_24
-            )
+            favorite.text = formatNumber(post.likes)
+            arrow.text = formatNumber(post.reposts)
+            favorite.isChecked = post.likeByMe
+
 
             favorite.setOnClickListener {
                 onInteractionListener.onLike(post)

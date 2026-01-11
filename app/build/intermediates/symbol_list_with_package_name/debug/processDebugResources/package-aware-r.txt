@@ -1383,12 +1383,14 @@ color bright_foreground_material_dark
 color bright_foreground_material_light
 color button_material_dark
 color button_material_light
+color button_text_color
 color call_notification_answer_color
 color call_notification_decline_color
 color cardview_dark_background
 color cardview_light_background
 color cardview_shadow_end_color
 color cardview_shadow_start_color
+color color_like
 color colorbackground
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
@@ -3034,6 +3036,7 @@ drawable ic_clock_black_24dp
 drawable ic_keyboard_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_like_selector
 drawable ic_m3_chip_check
 drawable ic_m3_chip_checked_circle
 drawable ic_m3_chip_close
@@ -3377,7 +3380,6 @@ id layout
 id left
 id leftToRight
 id legacy
-id likes
 id line1
 id line3
 id linear
@@ -3508,7 +3510,6 @@ id ratio
 id rectangles
 id remove
 id report_drawn
-id reposts
 id reverseSawtooth
 id right
 id rightToLeft
@@ -4781,6 +4782,8 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style Widget_App_Buttom
+style Widget_App_LikeButtom
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

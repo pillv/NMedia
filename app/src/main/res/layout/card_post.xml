@@ -47,14 +47,16 @@
         app:layout_constraintTop_toBottomOf="@id/author"
         tools:text="@sample/posts.json/data/published" />
 
-    <ImageView
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/more"
+        style="@style/Widget.App.Buttom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="@dimen/common_spacing"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
         android:background="@android:color/transparent"
         android:contentDescription="@string/description_post_menu"
-        android:src="@drawable/baseline_more_vert_24"
+        app:icon="@drawable/baseline_more_vert_24"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -85,46 +87,39 @@
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="content" />
 
-    <ImageButton
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/favorite"
+        style="@style/Widget.App.LikeButtom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/common_spacing"
         android:layout_marginBottom="@dimen/common_spacing"
-        android:src="@drawable/outline_favorite_border_24"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
+        app:icon ="@drawable/ic_like_selector"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/barrier2"
-        android:background="@android:color/transparent"
         android:contentDescription="@string/description_post_favorite"
+        android:checkable="true"
+        tools:checked="true"
+        tools:text="@sample/posts.json/data/likes"
         />
 
-    <TextView
-        android:id="@+id/likes"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/favorite"
-        app:layout_constraintStart_toEndOf="@+id/favorite"
-        app:layout_constraintTop_toTopOf="@id/favorite"
-        tools:text="@sample/posts.json/data/likes" />
 
-    <ImageView
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/arrow"
+        style="@style/Widget.App.Buttom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:minHeight="0dp"
+        android:minWidth="0dp"
         android:contentDescription="@string/description_post_repost"
-        android:layout_margin="@dimen/common_spacing"
-        android:src="@drawable/rounded_arrow_split_24"
-        app:layout_constraintStart_toEndOf="@id/likes"
-        app:layout_constraintTop_toBottomOf="@id/barrier2" />
+        app:icon="@drawable/rounded_arrow_split_24"
+        app:layout_constraintStart_toEndOf="@id/favorite"
+        app:layout_constraintTop_toBottomOf="@id/barrier2"
+        tools:text="@sample/posts.json/data/reposts"
 
-    <TextView
-        android:id="@+id/reposts"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="@id/arrow"
-        app:layout_constraintStart_toEndOf="@+id/arrow"
-        app:layout_constraintTop_toTopOf="@id/arrow"
-        tools:text="@sample/posts.json/data/reposts" />
+        />
 
 
 
@@ -133,8 +128,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:contentDescription="@string/description_post_view"
-        android:layout_marginTop="@dimen/common_spacing"
         android:src="@drawable/baseline_remove_red_eye_24"
+        android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@id/views"
         app:layout_constraintTop_toBottomOf="@id/barrier2" />
 

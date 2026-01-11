@@ -27,4 +27,11 @@
         
     </style>
     <style name="Theme.NMedia" parent="Base.Theme.NMedia"/>
+    <style name="Widget.App.Buttom" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="iconTint">@color/button_text_color</item>
+        <item name="android:textColor">@color/button_text_color</item>
+    </style>
+    <style name="Widget.App.LikeButtom" parent="Widget.Material3.Button.TextButton.Icon">
+        <item name="iconTint">@color/color_like</item>
+    </style>
 </resources>

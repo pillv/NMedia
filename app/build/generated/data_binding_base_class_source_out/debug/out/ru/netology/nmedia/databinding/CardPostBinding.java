@@ -4,7 +4,6 @@ package ru.netology.nmedia.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -13,6 +12,7 @@ import androidx.constraintlayout.widget.Barrier;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.button.MaterialButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -23,7 +23,7 @@ public final class CardPostBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final ImageView arrow;
+  public final MaterialButton arrow;
 
   @NonNull
   public final TextView author;
@@ -44,32 +44,25 @@ public final class CardPostBinding implements ViewBinding {
   public final ImageView eye;
 
   @NonNull
-  public final ImageButton favorite;
-
-  @NonNull
-  public final TextView likes;
+  public final MaterialButton favorite;
 
   @NonNull
   public final ConstraintLayout main;
 
   @NonNull
-  public final ImageView more;
+  public final MaterialButton more;
 
   @NonNull
   public final TextView published;
 
   @NonNull
-  public final TextView reposts;
-
-  @NonNull
   public final TextView views;
 
-  private CardPostBinding(@NonNull ConstraintLayout rootView, @NonNull ImageView arrow,
+  private CardPostBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton arrow,
       @NonNull TextView author, @NonNull ImageView avatar, @NonNull Barrier barrier,
       @NonNull Barrier barrier2, @NonNull TextView content, @NonNull ImageView eye,
-      @NonNull ImageButton favorite, @NonNull TextView likes, @NonNull ConstraintLayout main,
-      @NonNull ImageView more, @NonNull TextView published, @NonNull TextView reposts,
-      @NonNull TextView views) {
+      @NonNull MaterialButton favorite, @NonNull ConstraintLayout main,
+      @NonNull MaterialButton more, @NonNull TextView published, @NonNull TextView views) {
     this.rootView = rootView;
     this.arrow = arrow;
     this.author = author;
@@ -79,11 +72,9 @@ public final class CardPostBinding implements ViewBinding {
     this.content = content;
     this.eye = eye;
     this.favorite = favorite;
-    this.likes = likes;
     this.main = main;
     this.more = more;
     this.published = published;
-    this.reposts = reposts;
     this.views = views;
   }
 
@@ -115,7 +106,7 @@ public final class CardPostBinding implements ViewBinding {
     int id;
     missingId: {
       id = R.id.arrow;
-      ImageView arrow = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton arrow = ViewBindings.findChildViewById(rootView, id);
       if (arrow == null) {
         break missingId;
       }
@@ -157,21 +148,15 @@ public final class CardPostBinding implements ViewBinding {
       }
 
       id = R.id.favorite;
-      ImageButton favorite = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton favorite = ViewBindings.findChildViewById(rootView, id);
       if (favorite == null) {
-        break missingId;
-      }
-
-      id = R.id.likes;
-      TextView likes = ViewBindings.findChildViewById(rootView, id);
-      if (likes == null) {
         break missingId;
       }
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
       id = R.id.more;
-      ImageView more = ViewBindings.findChildViewById(rootView, id);
+      MaterialButton more = ViewBindings.findChildViewById(rootView, id);
       if (more == null) {
         break missingId;
       }
@@ -182,12 +167,6 @@ public final class CardPostBinding implements ViewBinding {
         break missingId;
       }
 
-      id = R.id.reposts;
-      TextView reposts = ViewBindings.findChildViewById(rootView, id);
-      if (reposts == null) {
-        break missingId;
-      }
-
       id = R.id.views;
       TextView views = ViewBindings.findChildViewById(rootView, id);
       if (views == null) {
@@ -195,7 +174,7 @@ public final class CardPostBinding implements ViewBinding {
       }
 
       return new CardPostBinding((ConstraintLayout) rootView, arrow, author, avatar, barrier,
-          barrier2, content, eye, favorite, likes, main, more, published, reposts, views);
+          barrier2, content, eye, favorite, main, more, published, views);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
