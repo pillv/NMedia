@@ -3007,9 +3007,11 @@ drawable abc_vector_test
 drawable avatar
 drawable avd_hide_password
 drawable avd_show_password
+drawable baseline_add_24
 drawable baseline_create_24
 drawable baseline_favorite_24
 drawable baseline_more_vert_24
+drawable baseline_play_circle_outline_24
 drawable baseline_remove_red_eye_24
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
@@ -3220,6 +3222,7 @@ id axisRelative
 id background
 id barrier
 id barrier2
+id barrier3
 id baseline
 id beginOnFirstDraw
 id beginning
@@ -3227,11 +3230,11 @@ id below
 id bestChoice
 id blocking
 id bottom
+id bottomAppBar
 id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id buttomBarrier
 id buttomEditBarrier
 id buttonPanel
 id cache_measures
@@ -3255,6 +3258,7 @@ id clear_text
 id clip_horizontal
 id clip_vertical
 id clockwise
+id close
 id closest
 id collapseActionView
 id compress
@@ -3322,6 +3326,7 @@ id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
 id eye
+id fab_container
 id fade
 id favorite
 id fill
@@ -3467,6 +3472,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id ok
 id on
 id onInterceptTouchReturnSwipe
 id open_search_bar_text_view
@@ -3517,7 +3523,6 @@ id right_icon
 id right_side
 id rounded
 id row_index_key
-id save
 id save_non_transition_alpha
 id save_overlay_view
 id sawtooth
@@ -3638,6 +3643,9 @@ id up
 id useLogo
 id vertical
 id vertical_only
+id video_block
+id video_play
+id video_preview
 id view_offset_helper
 id view_transition
 id view_tree_disjoint_parent
@@ -3771,7 +3779,10 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_edit_post
+layout activity_intent_handler
 layout activity_main
+layout activity_new_post
 layout card_post
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3899,10 +3910,12 @@ string call_notification_hang_up_action
 string call_notification_incoming_text
 string call_notification_ongoing_text
 string call_notification_screening_text
+string cant_open_link
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
+string close_edit_post_bottum
 string description_edit_message
 string description_post_author_avatar
 string description_post_favorite
@@ -3913,6 +3926,7 @@ string description_post_view
 string edit_text_avatar
 string edit_text_post
 string error_a11y_label
+string error_empty_content
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
@@ -4023,13 +4037,16 @@ string mtrl_switch_track_path
 string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string nmedia
+string open_with
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string play
 string post_content_hint
 string post_content_is_empty
+string repost
 string save_post_bottum
 string search_menu_title
 string searchbar_scrolling_view_behavior
@@ -4038,6 +4055,7 @@ string searchview_navigation_content_description
 string side_sheet_accessibility_pane_title
 string side_sheet_behavior
 string status_bar_notification_info_overflow
+string video_preview
 style AlertDialog_AppCompat
 style AlertDialog_AppCompat_Light
 style Animation_AppCompat_Dialog

@@ -67,6 +67,7 @@
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="avatar, more, published" />
 
+
     <TextView
         android:id="@+id/content"
         android:layout_width="0dp"
@@ -87,6 +88,40 @@
         app:barrierDirection="bottom"
         app:constraint_referenced_ids="content" />
 
+    <FrameLayout
+        android:id="@+id/video_block"
+        android:layout_width="match_parent"
+        app:layout_constraintTop_toBottomOf="@id/barrier2"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:visibility="gone"
+        android:clickable="true"
+        android:focusable="true">
+
+        <ImageView
+            android:id="@+id/video_preview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_background"
+            android:contentDescription="@string/video_preview" />
+
+        <ImageView
+            android:id="@+id/video_play"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center"
+            android:src="@drawable/baseline_play_circle_outline_24"
+            android:contentDescription="@string/play" />
+    </FrameLayout>
+
+    <androidx.constraintlayout.widget.Barrier
+        android:id="@+id/barrier3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:barrierDirection="bottom"
+        app:constraint_referenced_ids="video_block, barrier2" />
+
     <com.google.android.material.button.MaterialButton
         android:id="@+id/favorite"
         style="@style/Widget.App.LikeButtom"
@@ -97,7 +132,7 @@
         android:minWidth="0dp"
         app:icon ="@drawable/ic_like_selector"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/barrier3"
         android:contentDescription="@string/description_post_favorite"
         android:checkable="true"
         tools:checked="true"
@@ -116,7 +151,7 @@
         android:contentDescription="@string/description_post_repost"
         app:icon="@drawable/rounded_arrow_split_24"
         app:layout_constraintStart_toEndOf="@id/favorite"
-        app:layout_constraintTop_toBottomOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/barrier3"
         tools:text="@sample/posts.json/data/reposts"
 
         />
@@ -131,7 +166,7 @@
         android:src="@drawable/baseline_remove_red_eye_24"
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toStartOf="@id/views"
-        app:layout_constraintTop_toBottomOf="@id/barrier2" />
+        app:layout_constraintTop_toBottomOf="@id/barrier3" />
 
     <TextView
         android:id="@+id/views"
@@ -139,7 +174,8 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@id/eye"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/barrier2"
+        app:layout_constraintTop_toBottomOf="@id/barrier3"
         app:layout_constraintTop_toTopOf="@id/eye"
         tools:text="@sample/posts.json/data/views" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

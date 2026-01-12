@@ -4,6 +4,7 @@ package ru.netology.nmedia.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -38,6 +39,9 @@ public final class CardPostBinding implements ViewBinding {
   public final Barrier barrier2;
 
   @NonNull
+  public final Barrier barrier3;
+
+  @NonNull
   public final TextView content;
 
   @NonNull
@@ -56,25 +60,39 @@ public final class CardPostBinding implements ViewBinding {
   public final TextView published;
 
   @NonNull
+  public final FrameLayout videoBlock;
+
+  @NonNull
+  public final ImageView videoPlay;
+
+  @NonNull
+  public final ImageView videoPreview;
+
+  @NonNull
   public final TextView views;
 
   private CardPostBinding(@NonNull ConstraintLayout rootView, @NonNull MaterialButton arrow,
       @NonNull TextView author, @NonNull ImageView avatar, @NonNull Barrier barrier,
-      @NonNull Barrier barrier2, @NonNull TextView content, @NonNull ImageView eye,
-      @NonNull MaterialButton favorite, @NonNull ConstraintLayout main,
-      @NonNull MaterialButton more, @NonNull TextView published, @NonNull TextView views) {
+      @NonNull Barrier barrier2, @NonNull Barrier barrier3, @NonNull TextView content,
+      @NonNull ImageView eye, @NonNull MaterialButton favorite, @NonNull ConstraintLayout main,
+      @NonNull MaterialButton more, @NonNull TextView published, @NonNull FrameLayout videoBlock,
+      @NonNull ImageView videoPlay, @NonNull ImageView videoPreview, @NonNull TextView views) {
     this.rootView = rootView;
     this.arrow = arrow;
     this.author = author;
     this.avatar = avatar;
     this.barrier = barrier;
     this.barrier2 = barrier2;
+    this.barrier3 = barrier3;
     this.content = content;
     this.eye = eye;
     this.favorite = favorite;
     this.main = main;
     this.more = more;
     this.published = published;
+    this.videoBlock = videoBlock;
+    this.videoPlay = videoPlay;
+    this.videoPreview = videoPreview;
     this.views = views;
   }
 
@@ -135,6 +153,12 @@ public final class CardPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.barrier3;
+      Barrier barrier3 = ViewBindings.findChildViewById(rootView, id);
+      if (barrier3 == null) {
+        break missingId;
+      }
+
       id = R.id.content;
       TextView content = ViewBindings.findChildViewById(rootView, id);
       if (content == null) {
@@ -167,6 +191,24 @@ public final class CardPostBinding implements ViewBinding {
         break missingId;
       }
 
+      id = R.id.video_block;
+      FrameLayout videoBlock = ViewBindings.findChildViewById(rootView, id);
+      if (videoBlock == null) {
+        break missingId;
+      }
+
+      id = R.id.video_play;
+      ImageView videoPlay = ViewBindings.findChildViewById(rootView, id);
+      if (videoPlay == null) {
+        break missingId;
+      }
+
+      id = R.id.video_preview;
+      ImageView videoPreview = ViewBindings.findChildViewById(rootView, id);
+      if (videoPreview == null) {
+        break missingId;
+      }
+
       id = R.id.views;
       TextView views = ViewBindings.findChildViewById(rootView, id);
       if (views == null) {
@@ -174,7 +216,8 @@ public final class CardPostBinding implements ViewBinding {
       }
 
       return new CardPostBinding((ConstraintLayout) rootView, arrow, author, avatar, barrier,
-          barrier2, content, eye, favorite, main, more, published, views);
+          barrier2, barrier3, content, eye, favorite, main, more, published, videoBlock, videoPlay,
+          videoPreview, views);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

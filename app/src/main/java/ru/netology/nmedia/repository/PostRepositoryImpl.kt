@@ -36,6 +36,7 @@ class PostRepositoryInMemoryImpl : PostRepository {
             reposts = 1199,
             repostByMe = false,
             views = 13,
+            video = "https://rutube.ru/video/12b5683ad278231d97f0432573d23f24/"
         ),
         Post(
             id = 8,
@@ -124,6 +125,9 @@ class PostRepositoryInMemoryImpl : PostRepository {
             reposts = 115,
             repostByMe = false,
             views = 15,
+            video = "https://rutube.ru/video/12b5683ad278231d97f0432573d23f24/"
+
+
         )
     ).reversed()
 

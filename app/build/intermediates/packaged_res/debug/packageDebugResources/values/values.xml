@@ -7,6 +7,8 @@
     <dimen name="common_spacing">16dp</dimen>
     <dimen name="posts_avatar_size">48dp</dimen>
     <string name="app_name">NMedia</string>
+    <string name="cant_open_link">Cant open link</string>
+    <string name="close_edit_post_bottum">Close edit</string>
     <string name="description_edit_message">Edit message</string>
     <string name="description_post_author_avatar">Post author avatar</string>
     <string name="description_post_favorite">Post favorite</string>
@@ -16,12 +18,17 @@
     <string name="description_post_view">Post view</string>
     <string name="edit_text_avatar">Edit text avatar</string>
     <string name="edit_text_post">edit_text_post</string>
+    <string name="error_empty_content">Error empty content</string>
     <string name="menu_edit">Edit</string>
     <string name="menu_remove">Remove</string>
     <string name="nmedia">NMedia!</string>
+    <string name="open_with">Open with</string>
+    <string name="play">Play</string>
     <string name="post_content_hint">Post_content</string>
     <string name="post_content_is_empty">Post content is empty!</string>
+    <string name="repost">Repost</string>
     <string name="save_post_bottum">Save post bottum</string>
+    <string name="video_preview">Video preview</string>
     <style name="Base.Theme.NMedia" parent="Theme.Material3.DayNight.NoActionBar">
         
         

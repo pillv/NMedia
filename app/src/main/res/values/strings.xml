@@ -15,4 +15,11 @@
     <string name="description_edit_message">Edit message</string>
     <string name="edit_text_post">edit_text_post</string>
     <string name="save_post_bottum">Save post bottum</string>
+    <string name="repost">Repost</string>
+    <string name="error_empty_content">Error empty content</string>
+    <string name="close_edit_post_bottum">Close edit</string>
+    <string name="play">Play</string>
+    <string name="video_preview">Video preview</string>
+    <string name="cant_open_link">Cant open link</string>
+    <string name="open_with">Open with</string>
 </resources>

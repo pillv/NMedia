@@ -28,6 +28,32 @@
         android:testOnly="true"
         android:theme="@style/Theme.NMedia" >
         <activity
+            android:name="ru.netology.nmedia.activiti.EditPostActivity"
+            android:exported="true" >
+            <intent-filter android:autoVerify="true" >
+                <action android:name="android.intent.action.VIEW" />
+
+                <data
+                    android:host="rutube.ru"
+                    android:pathPrefix="/video/"
+                    android:scheme="https" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="ru.netology.nmedia.activiti.IntentHandlerActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="ru.netology.nmedia.activiti.MainActivity"
             android:exported="true" >
             <intent-filter>

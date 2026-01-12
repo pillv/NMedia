@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-26:12
-INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-26:12
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-51:12
+INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:1-51:12
 MERGED from [androidx.databinding:viewbinding:8.9.2] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/a4592fd373b4f90e7a2059a689a4b7a5/transformed/jetified-viewbinding-8.9.2/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.android.material:material:1.12.0] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/81700e54e5609756c373bfaf44845666/transformed/material-1.12.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/56f5467521312cab42f4bbf606811f57/transformed/constraintlayout-2.2.1/AndroidManifest.xml:2:1-9:12
@@ -59,8 +59,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.4.1] /Users/liudmila/
 	xmlns:android
 		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:2:11-69
 application
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:5:5-24:19
-INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:5:5-24:19
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:5:5-49:19
+INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:5:5-49:19
 MERGED from [com.google.android.material:material:1.12.0] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/81700e54e5609756c373bfaf44845666/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.12.0] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/81700e54e5609756c373bfaf44845666/transformed/material-1.12.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] /Users/liudmila/Library/Android/sdk/caches/8.11.1/transforms/56f5467521312cab42f4bbf606811f57/transformed/constraintlayout-2.2.1/AndroidManifest.xml:7:5-20
@@ -99,22 +99,66 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/liud
 		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:13:9-44
 	android:dataExtractionRules
 		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:7:9-65
-activity#ru.netology.nmedia.activiti.MainActivity
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:15:9-23:20
+activity#ru.netology.nmedia.activiti.EditPostActivity
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:16:9-29:20
 	android:exported
-		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:17:13-36
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:18:13-36
 	android:name
-		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:16:13-50
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:17:13-54
+intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:rutube.ru+data:pathPrefix:/video/+data:scheme:https
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:19:13-28:29
+	android:autoVerify
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:19:28-53
+action#android.intent.action.VIEW
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:20:17-69
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:20:25-66
+data
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:22:17-24:52
+	android:host
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:23:21-45
+	android:scheme
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:22:23-45
+	android:mimeType
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:38:23-52
+	android:pathPrefix
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:24:21-49
+category#android.intent.category.DEFAULT
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:26:17-76
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:26:27-73
+category#android.intent.category.BROWSABLE
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:27:17-78
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:27:27-75
+activity#ru.netology.nmedia.activiti.IntentHandlerActivity
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:30:9-40:20
+	android:exported
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:32:13-36
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:31:13-59
+intent-filter#action:name:android.intent.action.SEND+category:name:android.intent.category.DEFAULT+data:mimeType:text/plain
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:33:13-39:29
+action#android.intent.action.SEND
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:34:17-69
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:34:25-66
+activity#ru.netology.nmedia.activiti.MainActivity
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:41:9-48:20
+	android:exported
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:43:13-36
+	android:name
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:42:13-50
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:18:13-22:29
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:44:13-47:29
 action#android.intent.action.MAIN
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:19:17-69
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:45:17-69
 	android:name
-		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:19:25-66
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:45:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:21:17-77
+ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:46:17-77
 	android:name
-		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:21:27-74
+		ADDED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml:46:27-74
 uses-sdk
 INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/liudmila/Downloads/NMedia-main/app/src/main/AndroidManifest.xml

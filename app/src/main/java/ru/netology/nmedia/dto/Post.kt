@@ -10,6 +10,7 @@ data class Post(
     val reposts: Int,
     val repostByMe: Boolean = false,
     val views: Int,
+    val video: String? = null
 ) {
     companion object {
         val empty = Post(

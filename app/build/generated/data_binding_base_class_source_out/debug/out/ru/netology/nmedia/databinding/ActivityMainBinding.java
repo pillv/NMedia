@@ -4,7 +4,6 @@ package ru.netology.nmedia.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
@@ -15,6 +14,7 @@ import androidx.constraintlayout.widget.Group;
 import androidx.recyclerview.widget.RecyclerView;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -25,19 +25,16 @@ public final class ActivityMainBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final View background;
+  public final FloatingActionButton add;
 
   @NonNull
-  public final Barrier buttomBarrier;
+  public final View background;
 
   @NonNull
   public final Barrier buttomEditBarrier;
 
   @NonNull
   public final ImageView cancelEdit;
-
-  @NonNull
-  public final EditText content;
 
   @NonNull
   public final TextView editMessage;
@@ -55,28 +52,22 @@ public final class ActivityMainBinding implements ViewBinding {
   public final ConstraintLayout main;
 
   @NonNull
-  public final ImageView save;
-
-  @NonNull
   public final TextView textPost;
 
-  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull View background,
-      @NonNull Barrier buttomBarrier, @NonNull Barrier buttomEditBarrier,
-      @NonNull ImageView cancelEdit, @NonNull EditText content, @NonNull TextView editMessage,
-      @NonNull Group group, @NonNull ImageView icoEdit, @NonNull RecyclerView list,
-      @NonNull ConstraintLayout main, @NonNull ImageView save, @NonNull TextView textPost) {
+  private ActivityMainBinding(@NonNull ConstraintLayout rootView, @NonNull FloatingActionButton add,
+      @NonNull View background, @NonNull Barrier buttomEditBarrier, @NonNull ImageView cancelEdit,
+      @NonNull TextView editMessage, @NonNull Group group, @NonNull ImageView icoEdit,
+      @NonNull RecyclerView list, @NonNull ConstraintLayout main, @NonNull TextView textPost) {
     this.rootView = rootView;
+    this.add = add;
     this.background = background;
-    this.buttomBarrier = buttomBarrier;
     this.buttomEditBarrier = buttomEditBarrier;
     this.cancelEdit = cancelEdit;
-    this.content = content;
     this.editMessage = editMessage;
     this.group = group;
     this.icoEdit = icoEdit;
     this.list = list;
     this.main = main;
-    this.save = save;
     this.textPost = textPost;
   }
 
@@ -107,15 +98,15 @@ public final class ActivityMainBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.background;
-      View background = ViewBindings.findChildViewById(rootView, id);
-      if (background == null) {
+      id = R.id.add;
+      FloatingActionButton add = ViewBindings.findChildViewById(rootView, id);
+      if (add == null) {
         break missingId;
       }
 
-      id = R.id.buttomBarrier;
-      Barrier buttomBarrier = ViewBindings.findChildViewById(rootView, id);
-      if (buttomBarrier == null) {
+      id = R.id.background;
+      View background = ViewBindings.findChildViewById(rootView, id);
+      if (background == null) {
         break missingId;
       }
 
@@ -128,12 +119,6 @@ public final class ActivityMainBinding implements ViewBinding {
       id = R.id.cancel_edit;
       ImageView cancelEdit = ViewBindings.findChildViewById(rootView, id);
       if (cancelEdit == null) {
-        break missingId;
-      }
-
-      id = R.id.content;
-      EditText content = ViewBindings.findChildViewById(rootView, id);
-      if (content == null) {
         break missingId;
       }
 
@@ -163,21 +148,14 @@ public final class ActivityMainBinding implements ViewBinding {
 
       ConstraintLayout main = (ConstraintLayout) rootView;
 
-      id = R.id.save;
-      ImageView save = ViewBindings.findChildViewById(rootView, id);
-      if (save == null) {
-        break missingId;
-      }
-
       id = R.id.text_post;
       TextView textPost = ViewBindings.findChildViewById(rootView, id);
       if (textPost == null) {
         break missingId;
       }
 
-      return new ActivityMainBinding((ConstraintLayout) rootView, background, buttomBarrier,
-          buttomEditBarrier, cancelEdit, content, editMessage, group, icoEdit, list, main, save,
-          textPost);
+      return new ActivityMainBinding((ConstraintLayout) rootView, add, background,
+          buttomEditBarrier, cancelEdit, editMessage, group, icoEdit, list, main, textPost);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
