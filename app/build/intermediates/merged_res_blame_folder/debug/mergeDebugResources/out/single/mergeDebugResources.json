@@ -1,150 +1,146 @@
 [
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_outline_favorite_border_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/outline_favorite_border_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_favorite_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_favorite_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/menu_menu_post.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/menu/menu_post.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_add_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_add_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_outline_check_circle_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/outline_check_circle_24.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_more_vert_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_more_vert_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/xml_backup_rules.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/xml/backup_rules.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/ic_launcher_background.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/layout_activity_main.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/layout_activity_edit_post.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_edit_post.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/layout_card_post.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/layout/card_post.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_ic_like_selector.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/ic_like_selector.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_play_circle_outline_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_play_circle_outline_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_avatar.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/avatar.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/color_button_text_color.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/color/button_text_color.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_round_close_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/round_close_24.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/color_button_text_color.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/color/button_text_color.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_ic_launcher_background.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_round_close_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/round_close_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/xml/data_extraction_rules.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/layout_activity_new_post.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_new_post.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/layout_card_post.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/card_post.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/layout_activity_main.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_main.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/xml_backup_rules.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/layout_activity_new_post.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_new_post.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_more_vert_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_more_vert_24.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/xml_data_extraction_rules.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_play_circle_outline_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_play_circle_outline_24.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/color_color_like.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/color/color_like.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/color_color_like.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/color/color_like.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/ic_launcher_foreground.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_create_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_create_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/layout_activity_intent_handler.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_intent_handler.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_ic_launcher_foreground.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/layout_activity_edit_post.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_edit_post.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_create_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_create_24.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_baseline_remove_red_eye_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/baseline_remove_red_eye_24.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_ic_like_selector.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/ic_like_selector.xml"
+    },
+    {
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-hdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "ru.netology.nmedia.app-debug-4:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "ru.netology.nmedia.app-main-6:/mipmap-mdpi/ic_launcher.webp"
+    },
+    {
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_rounded_arrow_split_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/rounded_arrow_split_24.xml"
+    },
+    {
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_outline_check_circle_24.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/outline_check_circle_24.xml"
+    },
+    {
+        "merged": "ru.netology.nmedia.app-debug-4:/menu_menu_post.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/menu/menu_post.xml"
     },
     {
         "merged": "ru.netology.nmedia.app-debug-4:/layout_activity_intent_handler.xml.flat",
         "source": "ru.netology.nmedia.app-main-6:/layout/activity_intent_handler.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_rounded_arrow_split_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/rounded_arrow_split_24.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-xxxhdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_add_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_add_24.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_outline_favorite_border_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/outline_favorite_border_24.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_favorite_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_favorite_24.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/drawable_baseline_remove_red_eye_24.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/drawable/baseline_remove_red_eye_24.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-debug-4:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "ru.netology.nmedia.app-debug-4:/drawable_avatar.xml.flat",
+        "source": "ru.netology.nmedia.app-main-6:/drawable/avatar.xml"
     }
 ]

@@ -16,16 +16,6 @@
         <activity
             android:name=".activiti.EditPostActivity"
             android:exported="true">
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-
-                <data android:scheme="https"
-                    android:host="rutube.ru"
-                    android:pathPrefix="/video/" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".activiti.IntentHandlerActivity"
@@ -46,6 +36,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".activiti.NewPostActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

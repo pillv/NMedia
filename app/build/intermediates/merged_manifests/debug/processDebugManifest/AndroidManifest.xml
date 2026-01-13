@@ -30,17 +30,6 @@
         <activity
             android:name="ru.netology.nmedia.activiti.EditPostActivity"
             android:exported="true" >
-            <intent-filter android:autoVerify="true" >
-                <action android:name="android.intent.action.VIEW" />
-
-                <data
-                    android:host="rutube.ru"
-                    android:pathPrefix="/video/"
-                    android:scheme="https" />
-
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-            </intent-filter>
         </activity>
         <activity
             android:name="ru.netology.nmedia.activiti.IntentHandlerActivity"
@@ -62,6 +51,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="ru.netology.nmedia.activiti.NewPostActivity"
+            android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

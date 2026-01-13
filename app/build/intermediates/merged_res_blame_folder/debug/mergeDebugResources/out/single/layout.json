@@ -4,23 +4,19 @@
         "source": "ru.netology.nmedia.app-main-6:/layout/activity_intent_handler.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_edit_post.xml",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_edit_post.xml"
+        "merged": "ru.netology.nmedia.app-mergeDebugResources-3:/layout/card_post.xml",
+        "source": "ru.netology.nmedia.app-main-6:/layout/card_post.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_intent_handler.xml",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_intent_handler.xml"
+        "merged": "ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_edit_post.xml",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_edit_post.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_main.xml",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_main.xml"
+        "merged": "ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_main.xml",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_main.xml"
     },
     {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_new_post.xml",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/activity_new_post.xml"
-    },
-    {
-        "merged": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-mergeDebugResources-3:/layout/card_post.xml",
-        "source": "/Users/liudmila/Library/Android/sdk/daemon/8.11.1/ru.netology.nmedia.app-main-6:/layout/card_post.xml"
+        "merged": "ru.netology.nmedia.app-mergeDebugResources-3:/layout/activity_new_post.xml",
+        "source": "ru.netology.nmedia.app-main-6:/layout/activity_new_post.xml"
     }
 ]
