@@ -1,11 +1,15 @@
 package ru.netology.nmedia.adapter
 
+import android.content.Intent
+import android.view.View
+import android.widget.Toast
 import androidx.appcompat.widget.PopupMenu
 import androidx.recyclerview.widget.RecyclerView
 import ru.netology.nmedia.R
 import ru.netology.nmedia.databinding.CardPostBinding
 import ru.netology.nmedia.dto.Post
 import ru.netology.nmedia.repository.formatNumber
+import androidx.core.net.toUri
 
 class PostViewHolder(
     private val binding: CardPostBinding,
@@ -13,6 +17,7 @@ class PostViewHolder(
 ) : RecyclerView.ViewHolder(binding.root) {
 
     fun bind(post: Post) {
+
         binding.apply {
             author.text = post.author
             published.text = post.published
@@ -21,7 +26,6 @@ class PostViewHolder(
             arrow.text = formatNumber(post.reposts)
             favorite.isChecked = post.likeByMe
 
-
             favorite.setOnClickListener {
                 onInteractionListener.onLike(post)
             }
@@ -29,7 +33,6 @@ class PostViewHolder(
             arrow.setOnClickListener {
                 onInteractionListener.onRepost(post)
             }
-
 
             more.setOnClickListener {
                 PopupMenu(it.context, it).apply {
@@ -48,6 +51,31 @@ class PostViewHolder(
                         }
                     }
                 }.show()
+            }
+
+            if (!post.video.isNullOrBlank()) {
+                videoBlock.visibility = View.VISIBLE
+
+                val openVideo: (View) -> Unit = { v ->
+                    try {
+                        val uri = post.video!!.toUri()
+                        val intent = Intent(Intent.ACTION_VIEW, uri)
+                        v.context.startActivity(intent)
+                    } catch (e: Exception) {
+                        Toast.makeText(v.context, v.context.getString(R.string.cant_open_link), Toast.LENGTH_SHORT).show()
+                    }
+                }
+
+
+
+                videoBlock.setOnClickListener(openVideo)
+                videoPreview.setOnClickListener(openVideo)
+                videoPlay.setOnClickListener(openVideo)
+            } else {
+                videoBlock.visibility = View.GONE
+                videoBlock.setOnClickListener(null)
+                videoPreview.setOnClickListener(null)
+                videoPlay.setOnClickListener(null)
             }
         }
     }
