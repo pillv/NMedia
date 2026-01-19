@@ -8,8 +8,8 @@ import androidx.recyclerview.widget.RecyclerView
 import ru.netology.nmedia.R
 import ru.netology.nmedia.databinding.CardPostBinding
 import ru.netology.nmedia.dto.Post
-import ru.netology.nmedia.repository.formatNumber
 import androidx.core.net.toUri
+import formatNumber
 
 class PostViewHolder(
     private val binding: CardPostBinding,

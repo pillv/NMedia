@@ -43,7 +43,6 @@ class EditPostActivity : AppCompatActivity() {
             finish()
         }
 
-        // Нажатие Close — отмена редактирования
         binding.close.setOnClickListener {
             setResult(RESULT_CANCELED)
             finish()
